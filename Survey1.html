@@ -1,0 +1,140 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+	<script src="survey.js" type="text/javascript"></script>
+
+	<title>Student Survey</title>
+</head>
+
+<body>
+            
+<div id="heading">
+	<img class="center" src="george.png" alt="Mason" height="50" width="100">
+ 	<h1>Student Survey Form</h1>
+</div>
+	
+	<form name="SurveyForm" id="Survey_Form" method="post" autocomplete="on">
+<div>
+	<table>
+
+		<tr>
+			<th class="clr">First Name: <em>*</em></th>
+			<th><input type="text" id="name" autofocus="true" autocomplete="on" maxlength="25" type="text" name="Firstname"  value="" placeholder="James" required>
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr">Last Name: <em>*</em></th>
+			<th><input type="text" id="name" autofocus="true" autocomplete="on" maxlength="25" type="text" name="Lastname"  value="" placeholder="Williams" required>
+			</th>
+		</tr>
+ 
+		<tr>
+			<th class="clr">Street Address: <em>*</em></th>
+			<th><input id="address" type="text" name="Address" value=""  placeholder="Home Address" autocomplete="on" required>
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr">City: <em>*</em> </th>
+			<th> <input id="city" type="text" name="city" placeholder="Fairfax" required> 
+			</th>
+		</tr>
+
+		<tr>
+			<th class="clr">State: <em>*</em> </th>
+			<th> <input id="state" type="text" name="state" placeholder="Virginia" required> 
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr">Zip Code: <em>*</em> </th>
+			<th><input id="zip" type="text" name="Zip" maxlength="5" pattern="[0-9]{5}" placeholder="Eg: 22030" required>
+			</th>
+		</tr>		
+
+		<tr>
+			<th class="clr">Telephone Number: <em>*</em> </th>
+			<th><input type="tel" style="width: 30%"  maxlength="12" name="Tele" value="" placeholder="Ex: 571-490-5898" required>
+			</th>
+		</tr>
+
+		<tr>
+			<th class="clr">E-Mail: <em>*</em> </th>
+			<th> <input type="email" id="email" style="width: 50%"  maxlength="30" name="Email" value="" placeholder= "Eg : name@masonlive.gmu.edu" required>
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr">Date: <em>*</em> </th>
+			<th><input  style="width: 50%" type="date" name="lastname"  value="" placeholder="MM/DD/YYYY Ex: 03/27/2019" required>
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr1">What did you like the most in our college?</th>
+			<th>
+				<input type="checkbox" name="check" value="students">Students
+				<input type="checkbox" name="check" value="location">Location
+				<input type="checkbox" name="check" value="campus">Campus
+				<input type="checkbox" name="check" value="atmosphere">Atmosphere <br>
+				<input type="checkbox" name="check" value="dorm">Dorm Rooms
+				<input type="checkbox" name="check" value="sports">Sports
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr1">How did you hear about us?</th>
+			<th>
+				<input  type="radio" name="hear" value="friends">Friends
+				<input  type="radio" name="hear" value="television"> Television
+				<input  type="radio" name="hear" value="internet"> Internet
+				<input  type="radio" name="hear" value="others"> Others
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr1"> Your likelihood of Suggesting GMU to prospective students </th>
+			<th> <select>
+					<option value="Very Likely">Very Likely</option> 
+					<option value="Likely">Likely</option> 
+					<option value="Unlikely">Unlikely</option> 
+				</select>
+			</th>
+		</tr>
+		
+		<tr>
+			<th class="clr1"> Raffle: </th>
+			<th><input id="data" name="Num" type="text" style="width: 100%"  placeholder="Enter 10 Comma Separated numbers (within 1 to 100)" >
+			</th>
+		</tr>
+ 
+		<tr>
+			<th class="center" class="clr1"> Additional Comments : </th>
+			<th><textarea rows="4" cols="40"></textarea></th>
+		</tr>
+		
+
+	</table>
+
+<h5 style="color:red; font-family:Arial Black;" class="center">  * marked entries are mandatory</h5>
+
+</div>
+
+<div class="center">
+    <br><button type="cancel"  value="cancel" id="Cancel">Cancel</button>
+    <button type="submit" value="Submit" >Submit</button>
+    <br><br>
+</div>
+
+</form>
+
+<p> Tejambica Vadugu </p>	
+</body>
+</html>
